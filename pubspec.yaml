@@ -40,6 +40,11 @@ dependencies:
   # Others:
   freezed_annotation: 2.4.1
   json_annotation: 4.8.1
+  flutter_dotenv: 5.1.0
+
+  # Internal:
+  main_library:
+    path: ../main_library
 
 dev_dependencies:
   # Testing:
@@ -65,3 +70,6 @@ flutter:
   uses-material-design: true
 
   generate: true
+
+  assets:
+    - res/config/
