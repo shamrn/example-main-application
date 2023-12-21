@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:main_application/common/di/injector_configurator.dart';
+import 'package:main_library/common/di/injector_configurator.dart';
 
 abstract class ConsumerStateWithProvider<
     Provider extends StateNotifier<State>,

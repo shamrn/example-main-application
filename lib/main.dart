@@ -1,3 +1,3 @@
-import 'package:main_application/common/runner.dart';
+import 'package:main_library/runner.dart';
 
-void main() => run();
+void main() => mainLibraryConfigurator();

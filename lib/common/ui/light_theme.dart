@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:main_application/common/ui/app_colors.dart';
+import 'package:main_library/common/ui/app_colors.dart';
 
 final ThemeData lightTheme = ThemeData(
   visualDensity: VisualDensity.adaptivePlatformDensity,
