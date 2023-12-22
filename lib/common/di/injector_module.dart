@@ -1,19 +1,17 @@
+import 'package:awesome_dio_interceptor/awesome_dio_interceptor.dart';
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
-import 'package:main_library/common/env/environment_config.dart';
-import 'package:main_library/common/env/environment_config_initializer.dart';
-import 'package:main_library/common/routing/app_router.dart';
+import 'package:main_application/common/env/environment_config.dart';
+import 'package:main_application/common/env/environment_config_initializer.dart';
 
 @module
 abstract class InjectorModule {
-  @singleton
-  AppRouter get appRouter => AppRouter();
-
   @singleton
   EnvironmentConfig get environmentConfig => initEnvironmentConfig();
 
   @preResolve
   @singleton
-  Future<Dio> dio() async =>
-      Dio(BaseOptions(baseUrl: environmentConfig.baseUrl));
+  Future<Dio> dio() async => Dio(
+        BaseOptions(baseUrl: environmentConfig.baseUrl),
+      )..interceptors.add(AwesomeDioInterceptor(logRequestTimeout: false));
 }

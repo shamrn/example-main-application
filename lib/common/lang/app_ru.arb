@@ -4,5 +4,10 @@
     "serverError": "Ошибка сервера. Попробуйте позже.",
     "unknownError": "Неизвестная ошибка. Обратитесь в службу поддержки или попробуйте позже.",
 
-    "homeTitle": "Characters"
+    "initialToHomeButtonLabel": "To home",
+    "initialToProfileButtonLabel": "To profile",
+
+    "homeTitle": "Characters",
+
+    "profileTitle": "Character"
 }
